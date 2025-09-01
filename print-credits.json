@@ -1,0 +1,6 @@
+{
+  "1234": { "name": "Alice Johnson", "credit": 15.50 },
+  "4321": { "name": "Bob Smith", "credit": 7.00 },
+  "2468": { "name": "Charlie Brown", "credit": 12.25 },
+  "1357": { "name": "Diana Prince", "credit": 20.00 }
+}
