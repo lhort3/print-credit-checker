@@ -85,7 +85,7 @@
 
     <div class="right-panel">
       <div>
-        <div class="instructions">Please key in your 4-digit code.</div>
+        <div class="instructions">Please key your 4 digit code.</div>
         <div class="code-display" id="codeDisplay" aria-live="polite"></div>
         <div class="result" id="resultArea" aria-live="polite"></div>
       </div>
@@ -174,11 +174,11 @@
           const person = data[codeEntered];
           showResult(person.name, person.credit);
         } else {
-          showError('Code not found');
+          showError('User ID not Registered');
         }
       } catch(err){
         console.error(err);
-        showError('Lookup failed');
+        showError('WiFi Issue');
       }
       startCountdown();
     }
@@ -194,7 +194,7 @@
     function showResult(name, credit){
       resultArea.innerHTML = '';
       const n = document.createElement('div'); n.className = 'name'; n.textContent = name;
-      const c = document.createElement('div'); c.className = 'credit'; c.textContent = 'Credit: $' + Number(credit).toFixed(2);
+      const c = document.createElement('div'); c.className = 'credit'; c.textContent = 'Credit: £' + Number(credit).toFixed(2);
       resultArea.appendChild(n);
       resultArea.appendChild(c);
     }
